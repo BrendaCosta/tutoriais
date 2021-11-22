@@ -37,6 +37,7 @@ body{
 }
 .container .card:hover:before{
     clip-path: circle(300px at 80% -20%);
+    
 }
 .container .card:after{
     content: "Nike";
