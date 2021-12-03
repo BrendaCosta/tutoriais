@@ -20,7 +20,7 @@ body{
     position: relative;
     width: 700px;
     height: 350px;
-    margin: 20px;
+    margin: 20px; 
     display: flex;
     transition: 0.5s;
     justify-content: flex-start;
