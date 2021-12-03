@@ -20,14 +20,14 @@ body{
     position: relative;
     width: 700px;
     height: 350px;
-    margin: 20px; 
+    margin: 20px;
     display: flex;
     transition: 0.5s;
     justify-content: flex-start;
     align-items: center;
     background: linear-gradient(45deg, #1a2f3f, #7094ce);
 }
- 
+
 .container .card img{
     position: absolute;
     bottom: 0;
