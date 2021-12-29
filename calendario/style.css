@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+body{
+    background-color: #fff250b8;
+}
+.calendar{
+    padding: 20px 100px;
+}
+.calendar .months-container {
+justify-content: center;
+gap: 20px;
+}
+.calendar .months-container .month-container {
+    background-color: #fff;
+    padding: 20px;
+    min-width: 280px;
+    box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
+}
+.calendar table.month th.month-title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.9rem;
+    font-weight: 200;
+    padding-bottom: 20px;
+    color: #ec1e1e;
+}
+table.month td:first-child,
+table.month td:last-child,
+table.month thead tr:nth-child(2) th:first-child,
+table.month thead tr:nth-child(2) th:last-child{
+    color: #ec1e1e;
+}
+.calendar table.month td.day .day-content{
+    padding: 6px 8px;
+}
+.calendar table.month th.day-header{
+    color: #777;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+.month tr td{
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #777;
+}
+.calendar .calendar-header{
+    border: none;
+}
+.calendar .calendar-header table th:hover{
+    background: transparent;
+}
+
+.calendar .calendar-header .year-title{
+    font-size: 3em;
+    color: #777;
+    font-family: 'Dancing Script', cursive;
+
+}
+.calendar .calendar-header .year-neighbor
+{
+    font-size: 2.25em;
+}
+.calendar .calendar-header .year-neighbor2{
+    font-size: 1.75em;
+}
+
+@media screen and  ( max-width:768px) {
+    .calendar{
+        padding: 20px 40px;
+    }
+}
+/* .calendar .months-container .month-container.month-3:hover{
+    background: black;
+} */
