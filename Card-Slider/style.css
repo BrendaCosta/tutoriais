@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+}
+.swiper{
+    width: 950px;
+}
+.card .imagem{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #7d2ae8;
+}
+
+.card .imagem img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+.card{
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    margin: 20px 0;
+    width: 300px;
+    margin-bottom: 40px;
+    
+}
+.card::before{
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background: #7d2ae8;
+    border-radius: 20px 20px 0 0;
+}
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+    
+}
+
+.card .redes-sociais{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #f2f2f2;
+}
+
+.card .redes-sociais ion-icon{
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card .redes-sociais ion-icon:hover{
+    opacity: 1;
+}
+
+
+.card .nome-caracteristica{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #2a2a2a
+}
+
+.card .nome-caracteristica .nome{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card .nome-caracteristica .caracteristica{
+    font-size: 14px;
+   
+}
+
+.card .curtida{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.card .curtida ion-icon{
+    font-size: 20px;
+    color: #7d2ae8;
+}
+
+.card .botoes{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.card .botoes button{
+    background: #7d2ae8;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 20px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card .botoes button:hover{
+    background: #6616d0;
+}
+.swiper-pagination-bullet{
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: #7d2ae8;
+}
+.swiper-button-next, .swiper-button-prev{
+    opacity: 0.7;
+    color: #7d2ae8;
+    transition: all 0.3s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    opacity: 1;
+    color: #7d2ae8;
+}
