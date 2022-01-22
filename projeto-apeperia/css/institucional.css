@@ -61,3 +61,16 @@
         width: 100%;
     }
 }
+
+@media screen and (min-width: 1024px){
+
+    .intitucional__conteudo{
+        display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+    }
+    .institucional__video{
+        width: 400px;
+    }
+}
