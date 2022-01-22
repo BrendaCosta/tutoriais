@@ -35,3 +35,29 @@
 .sobre__imagem{
     display: none;
 }
+
+@media screen and (min-width: 1024px){
+    .sobre{
+        display: flex;
+    }
+    .sobre__imagem{
+        display: block;
+    }
+    .sobre .container{
+        display: flex;
+        
+    }
+
+    .sobre__conteudo{
+        margin-right: 3rem;
+    }
+    .sobre__titulo{
+        align-items: center;
+    }
+
+    .sobre__texto--divisao{
+        border-bottom: 1px solid var(--cinza-medio);
+        padding-bottom: 1.5rem;
+    }
+
+}
