@@ -5,12 +5,12 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
+
     height: 100vh;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    width: 100%;
     background: #f2f2f2;
     padding: 20px;
+  
 }
 h1{
     text-align: center;
