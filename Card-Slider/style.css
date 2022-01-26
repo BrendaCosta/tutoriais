@@ -14,6 +14,12 @@ body{
 .swiper{
     width: 950px;
 }
+.swiper-button-next{
+    right: 215px!important;
+}
+.swiper-button-prev{
+    left: 215px!important;
+}
 .card .imagem{
     height: 140px;
     width: 140px;
