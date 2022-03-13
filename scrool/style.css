@@ -1,0 +1,96 @@
+.horizontal-section {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 20px;
+  
+    /* visual styling */
+    display: grid;
+    width: 100%;
+    grid-auto-flow: column;
+    gap: 10px;
+    padding-left: 20px;
+  }
+  
+  .app-icon {
+    scroll-snap-align: start;
+  
+    /* visual styling */
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    background: red;
+    border-radius: 20px;
+  }
+  
+  /* ======================================== */
+  
+  /* Unrelated to scroll snap, visual styling */
+  
+  body {
+    background: #f7fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .phone {
+    background: #e2e8f0;
+    width: 300px;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04),
+      0px 0px 1px rgba(0, 0, 0, 0.04);
+  
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    gap: 20px;
+  }
+  
+  .mock-section {
+    height: 180px;
+    width: calc(100% - 40px);
+    background: #cbd5e0;
+    border-radius: 20px;
+  }
+  
+  .app-icon:nth-child(1) {
+    background: #3182ce;
+  }
+  
+  .app-icon:nth-child(2) {
+    background: #805ad5;
+  }
+  
+  .app-icon:nth-child(3) {
+    background: #38a169;
+  }
+  
+  .app-icon:nth-child(4) {
+    background: #63b3ed;
+  }
+  
+  .app-icon:nth-child(5) {
+    background: #ed8936;
+  }
+  
+  .app-icon:nth-child(6) {
+    background: #38b2ac;
+  }
+  
+  .app-icon:nth-child(7) {
+    background: #ecc94b;
+  }
+  
+  .app-icon:nth-child(8) {
+    background: #f56565;
+  }
+  

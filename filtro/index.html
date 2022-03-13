@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Lexend+Deca:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <ul>
+            <li class="list active" data-filter="todos">Todos</li>
+            <li class="list" data-filter="fofinha">Fofinha</li>
+            <li class="list" data-filter="dot">Dot</li>
+            <li class="list" data-filter="doguinhas">Doguinhas</li>
+            <li class="list" data-filter="calo">Caló</li>
+            <li class="list" data-filter="periquitos">Periquitos</li>
+        </ul>
+        <div class="produtos">
+            <div class="itemBox" data-item="fofinha"><img src="./img/fofinha1.jpg">    
+            <div class="itemBox" data-item="dot"><img src="./img/dot0.jpg">
+            <div class="itemBox" data-item="doguinhas"><img src="./img/doguinhas.jpg">
+            <div class="itemBox" data-item="calo"><img src="./img/calo1.jpg">
+            <div class="itemBox" data-item="periquitos"><img src="./img/periquito.jpg">
+            <div class="itemBox" data-item="fofinha"><img src="./img/fofinha2.jpg">
+            <div class="itemBox" data-item="dot"><img src="./img/dot1.jpg">
+            <div class="itemBox" data-item="doguinhas"><img src="./img/doguinhas2.jpg">
+            <!-- <div class="itemBox" data-item="calo"><img src="./img/calo2.jpg">
+            <div class="itemBox" data-item="fofinha"><img src="./img/fofinha3.jpg">
+            <div class="itemBox" data-item="dot"><img src="./img/dot2.jpg">
+            <div class="itemBox" data-item="doguinhas"><img src="./img/doguinhas3.jpg">
+            <div class="itemBox" data-item="calo"><img src="./img/calo3.jpeg">
+            <div class="itemBox" data-item="fofinha"><img src="./img/fofis.jpg">
+            <div class="itemBox" data-item="dot"><img src="./img/dot3.jpg">
+            <div class="itemBox" data-item="calo"><img src="./img/calo4.jpg">
+            <div class="itemBox" data-item="dot"><img src="./img/dot4.jpg">  -->
+
+                
+            
+
+            </div>
+        </div>
+    </section>
+   
+   <script>
+        let list = document.querySelectorAll('.list');
+        let itemBox = document.querySelectorAll('.itemBox');
+
+        for(let i = 0; i < list.length; i++){
+            list[i].addEventListener('click', function(){
+                for (let j = 0; j < list.length; j++){
+                    list[j].classList.remove('active');
+                }
+                this.classList.add('active');
+
+                let dataFilter = this.getAttribute('data-filter');
+                
+                for (let k = 0; k < itemBox.length; k++){
+                    itemBox[k].classList.remove( 'active');
+                    itemBox[k].classList.add( 'hide');
+
+                if (itemBox[k].getAttribute('data-item') == dataFilter || dataFilter == "all"){
+                    itemBox[k].classList.remove( 'hide');
+                    itemBox[k].classList.add( 'active');
+                    }
+                }
+
+                
+            })
+        }
+    </script>
+</body>
+</html>
