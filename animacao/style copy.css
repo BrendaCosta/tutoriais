@@ -1,0 +1,22 @@
+body{
+    animation: quica 1s cubic-bezier(0.68,-0.6, 0.32, 1.6) alternate infinite;
+    
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+   
+    height: 100vh;
+    font-size: 300%;
+    
+  }
+  svg{
+    width: 100px;
+  }
+  @keyframes quica {
+   to{
+       transform: translateY(30px);
+      }
+      
+      
+  }
+  
