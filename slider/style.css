@@ -9,13 +9,21 @@ ul{
 a{
     text-decoration: none;
 }
-.container{
-    width: 100%;
-    height: 100vh;
+body{
     background-color: #a4152c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+h2{
+    font-size: 2rem;
+    margin: 2rem 0;
+    font-family: 'Marvel', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
 }
 .box{
     width: 350px;
