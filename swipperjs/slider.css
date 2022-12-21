@@ -1,0 +1,118 @@
+
+main .swiper-slide{
+  width: 100%;
+}
+
+main .swiper{
+  margin: 0;
+}
+main .swiper-wrapper{
+  padding: 0;
+}
+.swiper-container {
+    position: relative;
+}
+.swiper-container .swiper {
+  width: 100%;
+  padding: 0 10px;
+} 
+.swiper-container .swiper-wrapper{
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.swiper-slide{
+  height: auto;
+}
+
+
+
+.swiper-container .swiper-button-prev,
+.swiper-container .swiper-button-prev-s2,
+.swiper-container .swiper-button-prev-s3{
+  left: -48px;
+}
+.swiper-container .swiper-button-next,
+.swiper-container .swiper-button-next-s2,
+.swiper-container .swiper-button-next-s3 {
+  right: -48px;
+}
+
+.swiper-button-prev, 
+.swiper-button-next,
+.swiper-button-next-s2,
+.swiper-button-prev-s2,
+.swiper-button-next-s3,
+.swiper-button-prev-s3{
+ 
+  background: #EEEBEB;
+  border-radius: 100%;
+  color: #545454;
+  width: 32px;
+  height: 32px;
+}
+
+.swiper-button-next:after, 
+.swiper-button-prev:after,
+.swiper-button-next-s2:after,
+.swiper-button-prev-s2:after,
+.swiper-button-next-s3:after,
+.swiper-button-prev-s3:after{
+  font-size: 1rem;
+  font-weight: 900;
+  font-family: swiper-icons;
+}
+
+.swiper-button-prev-s3,
+.swiper-button-prev-s2, 
+.swiper-rtl .swiper-button-next {
+  left: 10px;
+  right: auto;
+}
+.swiper-button-prev-s3:after, 
+.swiper-button-prev-s2:after, 
+.swiper-rtl .swiper-button-next-s2:after {
+  content: 'prev';
+}
+.swiper-button-next-s3:after, 
+.swiper-button-next-s2:after, 
+.swiper-rtl .swiper-button-prev-s2:after {
+  content: 'next';
+}
+.swiper-button-next-s33,
+.swiper-button-next-s2, 
+.swiper-rtl .swiper-button-prev {
+  right: 10px;
+  left: auto;
+}
+
+
+
+
+.swiper-button-next, 
+.swiper-button-prev,
+.swiper-button-next-s2, 
+.swiper-button-prev-s2,
+.swiper-button-next-s3, 
+.swiper-button-prev-s3 {
+  position: absolute;
+  top: 50%;
+  margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+} 
+
+  
+ @media screen and (max-width: 767px) {
+    .swiper-slide {
+        width: 160px!important;
+       
+    }
+    .swiper-container .swiper{
+      padding: 0 15px;
+    }
+
+}

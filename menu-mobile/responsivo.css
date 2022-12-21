@@ -1,0 +1,83 @@
+@media screen and (min-width: 1024px) {
+.icone_menu_mobile,
+.menu-mobile-home{
+    display: none;
+}
+
+}
+@media screen and (max-width: 767px) {
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none;
+    }
+    h2{
+        font-size: 18px!important;
+    }
+    .logo{
+        margin-left: 1rem;
+    }
+    
+      /*MENU MOBILE */
+   
+    nav {
+        width: unset;
+        background: transparent;
+        clip-path: unset;
+    }
+  
+     nav ul{
+        display: none;
+    } 
+   nav.ativo-menu ul{
+        display: block;
+        position: fixed;
+        width: 100%;
+        right: 0;
+        top: 80px;
+        height: calc(100vh - 80px);
+        background: #a5b4fc;
+        z-index: 999;
+    }
+    
+   
+    
+    .icone_menu_mobile{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: .5rem 1rem;
+        width: 3rem;
+        z-index: 3;
+       
+        
+    }
+    .icone_menu_mobile .hamburger{
+        border-top: 2px solid currentColor;
+        width: 20px;
+        
+    }
+    .icone_menu_mobile .hamburger::after,
+    .icone_menu_mobile .hamburger::before{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        position: relative;
+        transition: .3s;
+
+    }
+    nav.ativo-menu .hamburger{
+        border-top-color: transparent;
+    }
+    nav.ativo-menu .hamburger::before{
+        transform: rotate(135deg);
+    }
+    nav.ativo-menu .hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+}
