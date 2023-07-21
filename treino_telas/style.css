@@ -1,0 +1,22 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.check{
+  display: flex;
+}
+.checkin{
+  border: 1px solid #ddd;
+  width: 200px;
+  padding: 1rem;
+  
+}
+.left{
+  border-radius: 7px 0 0 0px;
+}
+
+.right{
+  border-radius: 0 7px 0 0px;
+}
